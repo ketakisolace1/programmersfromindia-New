@@ -84,7 +84,7 @@ const About = () => {
                     />
                     <div class="carousel-caption">
                       <h3>New York</h3>
-                      <p>We love the Big Apple!</p>
+                      <p>We love the Big Apple</p>
                     </div>
                   </div>
                 </div>
