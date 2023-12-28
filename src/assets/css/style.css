@@ -432,3 +432,14 @@
     }
  }
 
+ .logo-img{
+    float: left;
+    width: 55px;
+ }
+
+ .logo-img1{
+    float: left;
+    vertical-align: middle;
+    border-style: none;
+    width: 200px;
+ }

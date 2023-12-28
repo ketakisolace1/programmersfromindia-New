@@ -28,6 +28,7 @@ const App = () => {
       {/* <Routers/>  */}
       <Header/>
       <Routes>
+        <Route path="/" />
         <Route path="/home" element={ <Home/> } />
         <Route path="/about-us" element={ <About/> } />
         <Route path="/skills" element={<SkillSetPioner/>} />
