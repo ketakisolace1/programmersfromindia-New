@@ -4,10 +4,6 @@ import Testimonial1 from "../../assets/image/testimonial-1.jpg";
 import Testimonial2 from "../../assets/image/testimonial-2.jpg";
 import Testimonial3 from "../../assets/image/testimonial-3.jpg";
 import ImgCaomlogo1 from "../../assets/image/com-logo-1.jpg";
-import About1 from "../../assets/image/about-1.jpg";
-import About2 from "../../assets/image/about-2.jpg";
-import About3 from "../../assets/image/about-3.jpg";
-import About4 from "../../assets/image/about-4.jpg";
 
 const About = () => {
   return (

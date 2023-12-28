@@ -8,7 +8,7 @@ const SkillSetPioner = () => {
       <div class=" py-5 bg-dark  mb-5 banner-area">
         <div class="container my-5 pt-5 pb-4">
           <h1 class="display-3 text-white mb-3 animated slideInDown">
-            Hire Highly Skiiled Developers From India
+            Hire Highly Skilled Developers From India
           </h1>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb text-uppercase">
@@ -82,7 +82,9 @@ const SkillSetPioner = () => {
           ></button>
         </div>
 
-       
+       <div className="container-fluid">
+        <div className="row">
+          <div className="col">
         <div class="carousel-inner">
           
           <div class="carousel-item active">
@@ -106,6 +108,8 @@ const SkillSetPioner = () => {
               </div>
             </div>
             </div>
+            </div>
+            <div className="col">
             <div class="col-sm-4">
             <div class="carousel-item active">
               <div class="card" style={{ width: "400px" }}>
@@ -126,6 +130,7 @@ const SkillSetPioner = () => {
                   </a>
                 </div>
               </div>
+            </div>
             </div>
             </div>
             <div class="carousel-item">
@@ -167,7 +172,8 @@ const SkillSetPioner = () => {
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
-
+        </div>
+        </div>
         
       </div>
       </div>

@@ -5,10 +5,22 @@ const LearningCenter = () => {
  return (
 
  <div>
-    <h2>LearningCenter...
-    </h2>
-    <p>As designers, we are frequently and incorrectly reminded that our job is to “make things pretty.” We are indeed designers — not artists — and there is no place for formalism in good design. Web design has a function, and that function is to communicate the message for which the Web page was conceived. The medium is not the message.</p>
- </div>
+   <div class=" py-5 bg-dark  mb-5 banner-area">
+          <div class="container my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">
+              Learn More About About Our Contents.
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb text-uppercase">
+                {/* <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">About</li> */}
+              </ol>
+            </nav>
+          </div>
+        </div>
+    
+    </div>
 
 
  );

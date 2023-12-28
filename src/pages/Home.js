@@ -16,9 +16,24 @@ import { Link } from "react-router-dom";
 import { FaReact, FaNodeJs, FaLaravel, FaAngular, FaPhp, FaVuejs, FaAndroid, FaPython } from 'react-icons/fa';
 import { RiFlutterFill } from "react-icons/ri";
 import { TbChecks } from "react-icons/tb";
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 
 const Home = () => {
+
+
+
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false);
+
+  function handleShow() {
+    setFullscreen(true);
+    setShow(true);
+  }
+
+
   return (
     <div className="container-fluid p-0">
       <div className="owl-carousel header-carousel position-relative">
@@ -44,12 +59,13 @@ const Home = () => {
                     >
                       Find A Talent
                     </Link>
-                    <Link
+                    <Button
                       to={"/expert"}
                       className="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                      onClick={() => handleShow()}
                     >
                       Talk with An Expert
-                    </Link>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -1025,6 +1041,32 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Talk To An Expert</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Orgnisation Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1"/>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+   
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </Modal.Body>
+      </Modal>
+
+
     </div>
   );
 };

@@ -1,6 +1,17 @@
 import React from "react";
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 
 const JoinAsDev = () => {
+ 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
   return (
     <div>
       <div class=" py-5 bg-dark  mb-5 banner-area">
@@ -9,7 +20,7 @@ const JoinAsDev = () => {
             Find The Best Job By Joining Us.
           </h1>
           <div className="d-flex mb-6">
-            <a className="btn btn-primary joinUs" href="">
+            <a className="btn btn-primary joinUs" onClick={handleShow} >
               Apply Now
             </a>
           </div>
@@ -84,7 +95,38 @@ const JoinAsDev = () => {
           </div>
         </div>
       </div>
-
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Apply As A Developer</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Full Name</Form.Label>
+              <Form.Control as="textarea" rows={1} />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Apply
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
     </div>
   );

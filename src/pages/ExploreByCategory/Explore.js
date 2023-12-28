@@ -1,7 +1,31 @@
 import React from "react";
 import ImgCaomlogo1 from "../../assets/image/com-logo-1.jpg";
+import Swal from "sweetalert2";
+
 
 const Explore = () =>{
+
+
+  const handleBooknow = () =>{
+    Swal.fire({
+      title: "Confirm Your Booking",
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: "Yes",
+      denyButtonText: `No`
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire("Booked!", "", "success");
+      } else if (result.isDenied) {
+        Swal.fire("Changes are not saved", "", "info");
+      }
+    });
+  }
+
+
+
+
     return(
         <div>
             <div class=" py-5 bg-dark  mb-5 banner-area">
@@ -51,9 +75,9 @@ const Explore = () =>{
                         <a className="btn btn-light btn-square me-3" href="">
                           <i className="far fa-heart text-primary"></i>
                         </a>
-                        <a className="btn btn-primary" href="">
+                        <button className="btn btn-primary" href="" onClick={handleBooknow}>
                           Book Now
-                        </a>
+                        </button>
                       </div>
                       <small className="text-truncate">
                         <i className="far fa-calendar-alt text-primary me-2"></i>
