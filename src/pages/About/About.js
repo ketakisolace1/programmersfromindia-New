@@ -70,7 +70,7 @@ const About = () => {
                     />
                     <div class="carousel-caption">
                       <h3>Chicago</h3>
-                      <p>Thank you, Chicago!</p>
+                      <p>Thank you, Chicago</p>
                     </div>
                   </div>
                   <div class="carousel-item">
