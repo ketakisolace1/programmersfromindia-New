@@ -3,15 +3,16 @@ import { useHistory, Link, useLocation } from "react-router-dom";
 import Logo1 from "../assets/image/final_logo2.png";
 import Logo11 from "../assets/image/programers_india_text.png";
 
+
 const Header = () => {
   return (
   <div>
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+            <Link to="/home" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
             <img className="logo-img" src={Logo1} />
             <img className="logo-img1" src={Logo11} />
                 {/* <h1 class="m-0 text-primary">Programmer's From India</h1> */}
-            </a>
+            </Link>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>

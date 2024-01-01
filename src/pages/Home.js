@@ -19,6 +19,7 @@ import { TbChecks } from "react-icons/tb";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import BgImage from "../assets/image/bn-index-bg.jpg";
 
 
 const Home = () => {
@@ -38,11 +39,14 @@ const Home = () => {
     <div className="container-fluid p-0">
       <div className="owl-carousel header-carousel position-relative">
         <div className="owl-carousel-item position-relative">
-          <div className="banner-area">
-            <div
+          <div className="banner-area ">
+            <div>
+            <img src= { BgImage} 
+              
               className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
               style={{ background: "rgba(43, 57, 64, .5)" }}
-            >
+            />
+              
               <div className="container">
                 <div className="row justify-content-start">
                   <div className="col-10 col-lg-8">
@@ -69,7 +73,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Testimonial1 from "../../assets/image/testimonial-1.jpg";
 import Testimonial2 from "../../assets/image/testimonial-2.jpg";
 import Testimonial3 from "../../assets/image/testimonial-3.jpg";
 import ImgCaomlogo1 from "../../assets/image/com-logo-1.jpg";
+import Worldimg from "../../assets/image/world.svg";
 
 const About = () => {
   return (
@@ -109,6 +110,15 @@ const About = () => {
         </div>
 
         
+
+         <div class="container my-5 pt-5 pb-4">
+          <div className="world-img-section">
+          <img className="banner-area world-img" src={Worldimg}  />
+         <h2 className="world-img-txt">1,500+ Software Development Projects
+         in 30+ Countries</h2>
+         <p className="world-img-para">We are one of the most preferred IT outsourcing companies from India. We offer a complete bouquet of software development services to help businesses address their key technology challenges, enhance productivity and control costs.</p>
+            </div>
+        </div> 
 
         <div className="container-xxl py-5">
         <div className="container">
